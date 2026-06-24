@@ -1,0 +1,44 @@
+{
+    "NDVI": 
+    {
+        "required_bands": ["B04","B08"],
+        "color": "gmt/red2green",
+        "calculation": "(B08-B04)/(B08+B04)"
+    },
+
+    "NDWI": 
+    {
+        "required_bands": ["B03","B08"],
+        "color": "gmt/seis",
+        "calculation": "(B03-B08)/(B03+B08)"
+    },
+
+    "NDBI": 
+    {
+        "required_bands": ["B11","B08"],
+        "color": "gmt/gray",
+        "calculation": "(B11-B08)/(B11+B08)"
+    },
+
+    "NDMI": 
+    {
+        "required_bands": ["B08","B11"],
+        "color": "gmt/gray",
+        "calculation": "(B08-B11)/(B08+B11)"
+    },
+
+    "LCI": 
+    {
+        "required_bands": ["B04","B05","B08"],
+        "color": "gmt/red2green",
+        "calculation": "(B08-B05)/(B08+B04)"
+    },
+
+
+    "TEST": 
+    {
+        "required_bands": ["B01","B08", "B11", "B04"],
+        "calculation": "(B04-B08)/(B04+B08)"
+    }
+    
+}
